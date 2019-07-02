@@ -1,18 +1,23 @@
-describe('My First Test', function() {
+describe('Open a URL', function() {
     it('Visits the Kitchen Sink', function() {
       cy.visit('https://example.cypress.io')
     })
   })
 
-  describe('My Second Test', function() {
+  describe('Click the "Type" link and verify we get the correct page ', function() {
     it('finds the content "type"', function() {
         cy.visit('https://example.cypress.io')
         cy.contains('type').click()
         cy.url().should('include', '/commands/actions')
+    })
+  })
 
-        // Get an input, type into it and verify that the value has been updated
+  describe('Enter an email on the "type" page and verify the email address matches', function() {
+    it('finds the content "type"', function() {
+        cy.visit('https://example.cypress.io')
+        cy.contains('type').click()
         cy.get('.action-email')
         .type('fake@email.com')
-        .should('have.value', 'fakey@email.com')
+        .should('have.value', 'fake@email.com')
     })
   })
