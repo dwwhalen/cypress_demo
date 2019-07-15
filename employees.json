@@ -7,6 +7,12 @@
       "email": "sebastian@codingthesmartway.com"
     },
     {
+      "id": 2,
+      "first_name": "Ed",
+      "last_name": "Vedder",
+      "email": "ed@codingthesmartway.com"
+    },
+    {
       "id": 3,
       "first_name": "Ann",
       "last_name": "Smith",
