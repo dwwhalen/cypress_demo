@@ -1,3 +1,5 @@
+This repo was created to demo some basic Cypress featues.
+
 # install nodeJS
 https://nodejs.org/en/download/
 
@@ -23,7 +25,7 @@ $  npm run cy:run -- --spec "cypress/integration/sample_ui_spec.js"
 $  npm run cy:run -- --record --key 75048ae5-2e12-48d7-8019-d8d2512e90b7 --spec "cypress/integration/sample_ui_spec.js"
 ```
 
-# start backend server with json-server ()
+# start backend server with json-server (https://github.com/typicode/json-server)
 ```console
 $  json-server employees.json
 ```

@@ -30,7 +30,6 @@ describe('employees API', () => {
     })
   })
 
-
   it('And 49 items are returned', () => {
     cy.request('http://localhost:3000/employees')
       .its('body')
