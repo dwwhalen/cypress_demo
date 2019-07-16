@@ -1,5 +1,5 @@
 describe('Click the "Type" link and verify we get the correct page', function () {
-  it('finds the content "type"', function () {
+  it('clicks on the Type link', function () {
     cy.visit('https://example.cypress.io')
     // cy.pause()
     cy.contains('type').click()
@@ -10,7 +10,7 @@ describe('Click the "Type" link and verify we get the correct page', function ()
 })
 
 describe('Enter an email on the "type" page and verify the email address matches', function() {
-  it('finds the content "type"', function() {
+  it('enter an email adress in the email textbox', function() {
       cy.visit('https://example.cypress.io')
       cy.contains('type').click()
       cy.get('.action-email')
