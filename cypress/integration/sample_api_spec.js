@@ -1,5 +1,5 @@
 describe('employees API', () => {
-  it('Given the request returns JSON', () => {
+  it('Given the Employees request returns JSON', () => {
     cy.request('http://localhost:3000/employees')
       .its('headers')
       .its('content-type')
@@ -24,13 +24,13 @@ describe('employees API', () => {
     })
   })
 
-  it('Then item #5 is deleted', () => {
+  it('Then item #5 does not exist', () => {
     cy.request({url: 'http://localhost:3000/employees/5', failOnStatusCode: false}).then((response) => {
       expect(response.status).to.eq(404)
     })
   })
 
-  it('And 49 items are returned', () => {
+  it('And the request returns 49 items', () => {
     cy.request('http://localhost:3000/employees')
       .its('body')
       .should('have.length', 49)

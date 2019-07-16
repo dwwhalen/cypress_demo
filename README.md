@@ -21,7 +21,7 @@ cypress/integration/sample_ui_spec.js
 $  npm run cy:run -- --spec "cypress/integration/sample_ui_spec.js"
 ```
 
-# start backend server with json-server (https://github.com/typicode/json-server)
+# Create a sample REST endpoint with json-server (https://github.com/typicode/json-server)
 ```console
 $  json-server employees.json
 ```
